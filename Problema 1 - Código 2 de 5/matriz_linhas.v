@@ -1,6 +1,6 @@
 module matrizLinhas(A, B, C, S0, L1, L2, L3, L4, L5, L6, L7);
     input A, B, C;
-    output S0, L1, L2. L3, L4, L5, L6, L7;
+    output S0, L1, L2, L3, L4, L5, L6, L7;
 
     wire n1, n2, n3a, n3b, n4a, n4b, n5a, n5b, n6a, n6b, n7a, n7b, n7c;
 
