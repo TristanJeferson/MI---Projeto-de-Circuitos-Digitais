@@ -12,7 +12,7 @@ module matrizLinhas(A, B, C, S0, L1, L2, L3, L4, L5, L6, L7);
 
     //L2
     not Not2(n2, B);
-    and L2(L2, A, n2, C);
+    and andL2(L2, A, n2, C);
 
     //L3
     not Not3a(n3a, B);
@@ -22,7 +22,7 @@ module matrizLinhas(A, B, C, S0, L1, L2, L3, L4, L5, L6, L7);
     //L4
     not Not4a(n4a, A);
     not Not4b(n4b, C);
-    and L4(L4, n4a, B, n4c);
+    and andL4(L4, n4a, B, n4c);
 
     //L5
     not Not5a(n5a, A);
@@ -32,11 +32,12 @@ module matrizLinhas(A, B, C, S0, L1, L2, L3, L4, L5, L6, L7);
     //L6
     not Not6a(n6a, A);
     not Not6b(n6b, B);
-    and L6(L6, n6a, n6b, C);
+    and andL6(L6, n6a, n6b, C);
 
     //L7
     not Not7a(n7a, A);
     not Not7b(n7b, B);
     not Not7c(n7c, C);
-    and And7(L7, n7a, n7b, n7c);
+    and AndL7(L7, n7a, n7b, n7c);
+	 
 endmodule
