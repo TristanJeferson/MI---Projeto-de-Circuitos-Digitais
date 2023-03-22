@@ -1,1 +1,1 @@
-# MI---Projeto-de-Circuitos-Digitais
+# MI Projeto de Circuitos Digitais
