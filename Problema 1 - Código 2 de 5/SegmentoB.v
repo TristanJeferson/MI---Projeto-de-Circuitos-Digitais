@@ -2,7 +2,7 @@ module SegmentoB(E1, E2, E3, E4, E5, B);
     input E1, E2, E3, E4, E5;
     output B;
 
-    wires B1, B2, nB1a, nB1b, nB1c, nB2a, nB2b, nB2c;
+    wire B1, B2, nB1a, nB1b, nB1c, nB2a, nB2b, nB2c;
 
 
     not notB1a(nB1a, E2);
