@@ -54,7 +54,7 @@ module display(E1, E2, E3, E4, E5, A, B, C, D, E, F, G, P, S3);
     not notB2c(nB2c, E5);
     and andB2(B2, notB2, nB2a, E2, E3, nB2b, nB2c);
 	 
-	 //SEGMENTO B errO
+	//SEGMENTO B errO
     not notEb1a(nEb1a, E1);
     not notEb1b(nEb1b, E2);
     not notEb1c(nEb1c, E3);
@@ -165,8 +165,8 @@ module display(E1, E2, E3, E4, E5, A, B, C, D, E, F, G, P, S3);
     and andEc14(EC14, E1, E2, E4);
 
     and andEc15(EC15, E1, E2, E3);
-	 
-	 or orErroC(C, CNormal, EC1, EC2, EC3, EC4, EC5, EC6, EC7, EC8, EC9, EC10, EC11, EC12, EC13, EC14, EC15);
+	
+	or orErroC(C, CNormal, EC1, EC2, EC3, EC4, EC5, EC6, EC7, EC8, EC9, EC10, EC11, EC12, EC13, EC14, EC15);
 	 
     //SEGMENTO D
     not notDS1(notD1, S3);
@@ -189,7 +189,6 @@ module display(E1, E2, E3, E4, E5, A, B, C, D, E, F, G, P, S3);
 
     or orD(D, D1, D2, D3);
 
-	 //+ E1'.E2.E3'.E4.E5' + E1.E2'.E3'.E4.E5' + E1'.E2'.E3.E4'.E5 + E1'.E2.E3.E4'.E5'
     //SEGMENTO E
     not notES1(notE1, S3);
     not notE1a(nE1a, E3);
@@ -283,7 +282,6 @@ module display(E1, E2, E3, E4, E5, A, B, C, D, E, F, G, P, S3);
 
     or orG(G, G1, G2, G3);
 
-
     //SEGMENTO P
     not notPS1(notP1, S3);
     not notP1a(nP1a, E3);
@@ -308,8 +306,6 @@ module display(E1, E2, E3, E4, E5, A, B, C, D, E, F, G, P, S3);
     not notP4b(nP4b, E2);
     not notP4c(nP4c, E3);
     and andP4(P4, notP4, nP4a, nP4b, nP4c, E4, E5);
-	 
-	 //+ E1'.E2.E3.E4'.E5' + E1.E2'.E3.E4'.E5'
 
     not notPS5(notP5, S3);
     not notP5a(nP5a, E1);
