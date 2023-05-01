@@ -7,6 +7,4 @@ module Registrador1(clk, q, d);
 	begin
 		q <= d;
 	end
-	
-	
 endmodule
