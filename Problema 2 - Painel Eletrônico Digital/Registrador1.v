@@ -1,7 +1,10 @@
 module Registrador1(clk, q, d);
 	input clk;
-	input [27:0] d;
-	output reg [27:0] q;
+	input [15:0] d;
+	output reg [15:0] q;
+	initial begin
+		q = 16'b1010111011101110;
+	end
 	
 	always @(posedge clk)
 	begin
