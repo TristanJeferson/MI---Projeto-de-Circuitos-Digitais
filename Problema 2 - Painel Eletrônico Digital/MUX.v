@@ -1,6 +1,6 @@
 module MUX(s0, s1, entradaParalela, saidaPosterior, saidaAnterior, propriaSaida, out);
 
-	input s0, s1, i0, saidaPosterior, saidaAnterior, propriaSaida;
+	input s0, s1, entradaParalela, saidaPosterior, saidaAnterior, propriaSaida;
 	output out;
 	wire fio0, fio1, fio2, fio3; //cada fio corresponde a uma saida i
 	
