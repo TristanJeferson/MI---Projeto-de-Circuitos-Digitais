@@ -1,11 +1,14 @@
-module contador_3bits(clk, clr, q);
-	input clk, clr;
+module t_ff_counter(clk, q);
+	input clk;
 	output reg [2:0] q;
+	wire t0, t1, t2;
+
+	t_ff ff0(clk, 1'b1, t0);
+	t_ff ff1(clk, t0, t1);
+	t_ff ff2(clk, t0 & t1, t2);
 	
-	always @(posedge clk, posedge clr) begin
-		if(clr)
-			q = 3'b000;
-		else
-			q = q + 3'b001;
+	always @(*) begin
+		q = {t2, t1, t0};
 	end
+	
 endmodule
