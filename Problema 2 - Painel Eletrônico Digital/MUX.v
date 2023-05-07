@@ -13,4 +13,4 @@ module MUX(s0, s1, entradaParalela, saidaPosterior, saidaAnterior, propriaSaida,
 	
 	or orOut(out, fio0, fio1, fio2, fio3);
 	
-	endmodule
+endmodule
