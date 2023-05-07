@@ -13,6 +13,3 @@ module FlipFlopD(s0, s1, clk, entradaParalela, saidaPosterior, saidaAnterior, ou
 
 
 endmodule
-
-
-
