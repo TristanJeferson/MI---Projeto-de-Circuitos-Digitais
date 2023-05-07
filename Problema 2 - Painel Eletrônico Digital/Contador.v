@@ -1,4 +1,4 @@
-module Contador(clk, t0, t1, t2);
+module Contador(clk, t2, t1, t0);
 	input clk;
 	output t0, t1, t2;
 
