@@ -1,7 +1,7 @@
 module FlipFlopD(s0, s1, clk, entradaParalela, saidaPosterior, saidaAnterior, outFF);
 
 	input s0, s1, clk,  entradaParalela, saidaPosterior, saidaAnterior;
-	output reg i0Inst1;
+	output reg outFF;
 	wire outMux;
 	
 	MUX (s0, s1, entradaParalela, saidaPosterior, SaidaAnterior, outFF, outMux);
@@ -10,6 +10,9 @@ module FlipFlopD(s0, s1, clk, entradaParalela, saidaPosterior, saidaAnterior, ou
 	begin
 		outFF <= outMux;
 	end
+
+
+endmodule
 
 
 endmodule
