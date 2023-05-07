@@ -18,7 +18,6 @@ module DEMUX_L(linha,sel1, sel2, sel3, saida);
 	and (and8, sel1, sel2, sel3, linha[6]);
 	or (or1, and1, and2, and3, and4, and5, and6, and7, and8);
 	
-	
 	always @(*) begin
 		saida = or1;
 	end
