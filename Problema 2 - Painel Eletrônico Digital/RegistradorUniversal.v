@@ -1,7 +1,7 @@
 module RegistradorUniversal(ch0, ch1, clk, cadeiaDeBits, outRU);
 	input ch0, ch1, clk;
 	input [15:0] cadeiaDeBits;
-	output [6:0] outRU;
+	output reg [6:0] outRU;
 	wire s0, s1, s2, s3, s4, s5, s6, s7, s8, s9, s10, s11, s12, s13, s14, s15;
 	
 	FlipFlopD FF0(ch0, ch1, clk, cadeiaDeBits[0], s1, s15, s0);
@@ -21,8 +21,8 @@ module RegistradorUniversal(ch0, ch1, clk, cadeiaDeBits, outRU);
 	FlipFlopD FF14(ch0, ch1, clk, cadeiaDeBits[14], s15, s13, s14);
 	FlipFlopD FF15(ch0, ch1, clk, cadeiaDeBits[15], s0, s14, s15);
 	
-	always @(posedge clock) begin
-		outRU <= {s0, s1, s2, s3, s4, s5, s6}
+	always @(posedge clk) begin
+		outRU <= {s0, s1, s2, s3, s4, s5, s6};
 	end
 	
 endmodule
