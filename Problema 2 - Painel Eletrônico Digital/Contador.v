@@ -1,4 +1,4 @@
-module Contador_3bits(clk, t0, t1, t2);
+module Contador(clk, t0, t1, t2);
 	input clk;
 	output t0, t1, t2;
 
