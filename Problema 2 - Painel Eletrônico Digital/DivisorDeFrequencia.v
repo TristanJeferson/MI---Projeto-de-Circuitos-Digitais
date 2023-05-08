@@ -1,7 +1,7 @@
 module DivisorDeFrequencia(clk, clkRU, clkCONT);
 	input clk;
-	output reg clkRU, clkCONT;
-	wire reg clk1, clk2, clk3, clk4, clk5, clk6, clk7,
+	output clkRU, clkCONT;
+	wire clk1, clk2, clk3, clk4, clk5, clk6, clk7,
 	clk8, clk9, clk10, clk11, clk12, clk13, clk14,
 	clk15, clk17, clk18, clk19, clk20, clk21, clk22, clk23;
 	
