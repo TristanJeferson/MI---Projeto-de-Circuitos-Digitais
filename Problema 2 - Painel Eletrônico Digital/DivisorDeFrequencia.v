@@ -1,6 +1,6 @@
 module DivisorDeFrequencia(clk);
 	input clk;
-	output reg clkRU, clkDEMUX;
+	output reg clkRU, clkCONT;
 	wire reg clk1, clk2, clk3, clk4, clk5, clk6, clk7,
 	clk8, clk9, clk10, clk11, clk12, clk13, clk14,
 	clk15, clk17, clk18, clk19, clk20, clk21, clk22, clk23;
@@ -20,8 +20,8 @@ module DivisorDeFrequencia(clk);
 	FlipFlop_T(clk12, 1'b1, clk13);
 	FlipFlop_T(clk13, 1'b1, clk14);
 	FlipFlop_T(clk14, 1'b1, clk15);
-	FlipFlop_T(clk15, 1'b1, outDEMUX);
-	FlipFlop_T(outDEMUX, 1'b1, clk17);
+	FlipFlop_T(clk15, 1'b1, clkCONT);
+	FlipFlop_T(clkCONT, 1'b1, clk17);
 	FlipFlop_T(clk17, 1'b1, clk18);
 	FlipFlop_T(clk18, 1'b1, clk19);
 	FlipFlop_T(clk19, 1'b1, clk20);
