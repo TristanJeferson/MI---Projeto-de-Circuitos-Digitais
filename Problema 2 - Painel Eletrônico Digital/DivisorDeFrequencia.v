@@ -28,6 +28,6 @@ module DivisorDeFrequencia(clk, clkRU, clkCONT);
 	FlipFlop_T(clk20, 1'b1, clk21);
 	FlipFlop_T(clk21, 1'b1, clk22);
 	FlipFlop_T(clk22, 1'b1, clk23);
-	FlipFlop_T(clk23, 1'b1, outRU);
+	FlipFlop_T(clk23, 1'b1, clkRU);
 	
 endmodule
