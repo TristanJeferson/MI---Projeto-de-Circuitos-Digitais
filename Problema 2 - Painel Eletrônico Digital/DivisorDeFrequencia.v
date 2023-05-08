@@ -1,4 +1,4 @@
-module DivisorDeFrequencia(clk);
+module DivisorDeFrequencia(clk, clkRU, clkCONT);
 	input clk;
 	output reg clkRU, clkCONT;
 	wire reg clk1, clk2, clk3, clk4, clk5, clk6, clk7,
