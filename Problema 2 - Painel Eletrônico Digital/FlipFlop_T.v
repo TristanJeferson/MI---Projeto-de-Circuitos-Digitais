@@ -1,11 +1,12 @@
-module FlipFlop_T(clk, t, q);
-	input clk, t;
+module FlipFlop_T(clk, rst, t, q);
+	input clk, t, rst;
 	output reg q;
 	
 	always @(posedge clk) begin
-		if (t)
+		if (rst)
+			q=0;
+			
+		else if (t)
 			q <= ~q;
-		else
-			q <= q;
 	end
 endmodule
