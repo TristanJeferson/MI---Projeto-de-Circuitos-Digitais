@@ -1,4 +1,4 @@
-module DEMUX_L(linha,sel1, sel2, sel3, out);
+module MUX_L(linha,sel1, sel2, sel3, out);
 	input sel1, sel2, sel3;
 	input [6:0] linha;
 	output out;
